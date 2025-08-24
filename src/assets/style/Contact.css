@@ -1,0 +1,135 @@
+body{
+    margin: 0;
+    padding:0;
+}
+.main{
+    display:grid;
+    justify-content: center;
+    text-align: center;
+}
+.main .div1 .p1{
+    font-size: 80px;
+    font-weight: bolder;
+    margin: 0;
+    padding: 0;
+}
+.main .div1 .p2{
+    width: 60%;
+    justify-self: center;
+}
+.main .form{
+    display: flex;
+    justify-content: center;
+}
+.main form{
+    margin-top: 20px;
+    background-color: rgb(255, 194, 176);
+    align-items: center;
+    width: 50%;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 3% 2%;
+}
+.main .form .div2 ,.div4{
+    padding: 0 2%;
+    flex-direction: column;
+    display: flex;
+    text-align: start;
+}
+
+.main form input{
+    border-radius: 16px;
+    width: 92%;
+    padding: 3%;
+}
+
+.main .form .div4 input{
+    height: 100px;
+}
+.main form .div3{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+.main button{
+  background-color: black;
+  color: white;
+  padding: 12px 24px;
+  border: 2px solid black;
+  border-radius: 24px;
+  font-size: 16px;
+  text-decoration: none;
+  transition: background-color 1s;
+  transition: color 1s;
+  cursor: pointer;
+}
+
+.main button:hover{
+  background-color: rgb(255, 194, 176);
+  color: black;
+}
+.contact-icon{
+    justify-self: center;
+}
+.contact-container {
+    background-color: transparent;
+    border-radius: 12px;
+    padding: 30px;
+    width: 100%;
+    max-width: 400px;
+    justify-self: center;
+}
+        
+.contact-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 25px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+        
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+        
+.contact-item {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    background-color: rgb(255, 194, 176);
+    text-decoration: none;
+      border: 3px solid black;
+  box-shadow: 3px 2px 2px 2px black;
+  border-radius: 20px;
+  transition: all .35s;
+}
+        
+.contact-item:hover {
+  box-shadow: 0 0 0 0 ;
+  transform: translateY(6px);
+}
+        
+.contact-item p:first-child {
+    font-size: 14px;
+    font-weight: 600;
+    color: black;
+    margin-bottom: 5px;
+    }
+        
+.contact-item p:last-child {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+}
+
+/* للموبايل الصغير */
+@media screen and (max-width: 490px) {
+    .main form{
+        width: 95%;
+    }
+}

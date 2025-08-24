@@ -1,0 +1,87 @@
+.random-recipes {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.random-recipes h1 {
+  font-size: 100px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.random-recipes h1 span {
+  display: block;
+  font-size: 100px;
+  color: #e84a2a;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.card {
+  background: transparent;
+  border-radius: 10px;
+  width: 350px;
+  text-align: left;
+  position: relative;
+  transition: 0.5s;
+  
+}
+
+.card-image-wrapper {
+  position: relative;
+}
+
+.card img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+  border: 3px solid black;
+  box-shadow: 3px 2px 2px 2px black;
+  border-radius: 20px;
+  transition: all .35s;
+}
+.card:hover img{
+  box-shadow: 0 0 0 0 ;
+  transform: translateY(6px);
+}
+
+.random-recipes .price {
+  position: absolute;
+  background: black;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 5px;
+  font-size: 14px;
+  margin: 8px;
+}
+
+.card-title {
+  padding: 10px 5px;
+  font-size: 18px;
+  color: #333;
+}
+@media (max-width: 991px) {
+  .cards-container {
+    flex-direction: column;
+    width: fit-content;
+    margin: auto;
+  }
+}
+@media (max-width: 676px) {
+  .random-recipes h1,
+  .random-recipes h1 span {
+    font-size: 50px;
+  }
+  .card {
+    width: 300px;
+  }
+}

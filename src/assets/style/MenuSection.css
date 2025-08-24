@@ -1,0 +1,225 @@
+.menu-section {
+  text-align: center;
+  padding: 50px 20px;
+  background: #ffc2b0; 
+  border-top: 4px solid black; 
+  border-bottom: 4px solid black;
+  border-top-left-radius: 50% 20%;
+  border-top-right-radius: 50% 20%;
+  border-bottom-left-radius: 50% 20%;
+  border-bottom-right-radius: 50% 20%;
+}
+
+
+.menu-title {
+  text-transform: uppercase;
+  font-family: Realce, Impact, sans-serif;
+  font-size: 8rem;
+  font-weight: 400;
+  line-height: .9;
+  margin: 2.5% auto;
+  width: 59%;
+}
+
+.highlight {
+  color: #ff5e00;
+  letter-spacing: 3px;
+  -webkit-text-stroke-width: 6px;
+  -webkit-text-stroke-color: black;
+  text-transform: capitalize;
+  font-family: Mentimun, Impact, sans-serif;
+  font-size: 7.75rem;
+  font-weight: 400;
+  position: relative;
+  top: -10px;
+}
+
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
+.tab-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  position: relative;
+  z-index: 99;
+  border: 3px solid black;
+  background-color: #ffd966;
+  box-shadow: 3px 2px 2px 2px black;
+  border-radius: 100px;
+  transition: all .35s;
+  padding: 1% 2%;
+  font-size: 20px;
+}
+
+.tab-btn.active{
+  background-color: #ff5e00;
+  box-shadow: 0 0 0 0 ;
+  transform: translateY(6px);
+}
+
+.tab-btn:hover , .social-icons svg:hover ,.menu-grid .menu-card:hover{
+  box-shadow: 0 0 0 0 ;
+  transform: translateY(6px);
+}
+
+.menu-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin: auto;
+  margin-bottom: 5%;
+  width: 70%;
+}
+.menu-card {
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+  border: 3px solid black;
+  box-shadow: 3px 2px 2px 2px black;
+  border-radius: 20px;
+  transition: all .35s;
+  flex: 0 0 calc(33.333% - 25px);
+  max-width: calc(33.333% - 25px);
+}
+
+.price-tag {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: black;
+  color: white;
+  padding: 6px 10px;
+  font-size: 0.9rem;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.menu-img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.emoji {
+  position: absolute;
+  width: 40%;
+  aspect-ratio: 1/1;
+  pointer-events: none;
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(0.5);
+  transition: opacity 0.4s ease;
+}
+
+.emoji.show {
+  opacity: 1;
+  animation: bounceIn 0.6s ease-out;
+}
+
+@keyframes bounceIn {
+  0% {
+    transform: translate(-50%, -50%) scale(0.5);
+  }
+  50% {
+    transform: translate(-50%, -60%) scale(1.2); /* يطلع سنة لفوق ويكبر */
+  }
+  70% {
+    transform: translate(-50%, -48%) scale(0.9); /* ينزل سنة لتحت */
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1); 
+  }
+}
+
+/* الشاشات الكبيرة */
+@media screen and (max-width: 1400px) {
+  .menu-section {
+    border-top-left-radius: 40% 12%;
+    border-top-right-radius: 40% 12%;
+    border-bottom-left-radius: 40% 12%;
+    border-bottom-right-radius: 40% 12%;
+  }
+  .menu-title {
+    font-size: 6.5rem;
+    line-height: 1;
+    width: 70%;
+  }
+  .highlight {
+    font-size: 6.75rem;
+  }
+  .menu-grid {
+    width: 93%;
+  }
+}
+@media screen and (max-width: 1200px) {
+    .menu-title {
+        font-size: 6.5rem;
+        line-height: 1;
+        width: 76%;
+    }
+}
+/* التابلت */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .menu-grid {
+    width: 90%;
+}
+  .menu-title {
+    font-size: 5rem;
+    line-height: 1;
+    width: 75%;
+  }
+  .highlight {
+    font-size: 4.75rem;
+  }
+  .menu-card {
+    flex: 0 0 calc(51.333% - 25px);
+    max-width: calc(46.333% - 25px);
+  }
+  .avatar {
+    width: 9%;
+  }
+}
+@media screen and (max-width: 580px) {
+  .menu-title{
+    width: 100%;
+    font-size: 4rem;
+  }
+  .highlight{
+    font-size: 3.75rem;
+  }
+}
+/* للموبايل الصغير */
+@media screen and (max-width: 490px) {
+  .menu-section{
+    border-top-left-radius: 38% 5%;
+    border-top-right-radius: 38% 5%;
+    border-bottom-left-radius: 38% 5%;
+    border-bottom-right-radius:38% 5%;
+  }
+  .menu-title {
+    font-size: 3rem;
+    line-height: 1.2;
+    width: 89%;
+  }
+  .highlight {
+    -webkit-text-stroke-width: 3px;
+    font-size: 2.75rem;
+  }
+  .tabs {
+    flex-wrap: wrap;
+  }
+  .menu-grid {
+    flex-direction: column;
+    width: 93%;
+  }
+  .menu-card{
+    max-width: 100%;
+  }
+}

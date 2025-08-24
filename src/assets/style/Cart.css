@@ -1,0 +1,167 @@
+/* الخلفية الداكنة */
+.cart-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.699); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.cart-box {
+  background: #fff; 
+  width: 30%; 
+  max-height: 80vh; 
+  overflow-y: auto;
+  border-radius: 10px;
+  padding:0 5px 20px 20px;
+  box-shadow: 0 5px 5px rgba(0,0,0,0.3);
+  border: 2px solid black;
+  position: relative;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* الهيدر */
+.cart-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  position: fixed;
+  width: 27%;
+  background-color: #fff;
+  padding: 1% 0;
+}
+
+.cart-header h2 {
+  font-size: 18px;
+  margin: 0;
+}
+.cart-header .highlight {
+  font-size: 1.3rem;
+  top: 0px;
+  -webkit-text-stroke-width: 1px;
+}
+.cart-header button {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* عناصر الكارت */
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 35px;
+}
+
+.cart-item img {
+  aspect-ratio: 1 / 1;
+  width: 30%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.item-details {
+  flex: 1;
+  margin: 0 10px;
+}
+
+.item-details h4{
+  width: 70%;
+  margin-bottom: auto;
+}
+.item-details p{
+  margin-bottom: auto;
+}
+.item-details button:hover{
+  color: lightgray;
+}
+.item-details button{
+  background: none;
+  border: 0;
+  color: red;
+}
+.quantity-control{
+  width: 20%;
+}
+.quantity-control span{
+  margin: 0 5%;
+}
+.quantity-control button {
+  background: #ddd;
+  border: none;
+  padding: 3px 8px;
+  cursor: pointer;
+}
+.emptyCard{
+  margin-top: 15%;
+  justify-self: center;
+}
+/* الإجمالي */
+.cart-total {
+  margin-top: 10px;
+  font-weight: bold;
+  text-align: right;
+}
+
+/* زرار الشيك اوت */
+.checkout-btn {
+  width: 100%;
+  padding: 10px;
+  background: #000;
+  color: #fff;
+  border: none;
+  margin-top: 15px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* أنيميشن بسيطة */
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+
+@media screen and (max-width: 1400px) {
+  .cart-box{
+    width: 50%;
+  }
+  .cart-header{
+    width: 42%;
+  }
+  .emptyCard{
+    margin-top: 11%;
+  }
+}
+@media screen and (max-width: 992px) {
+  .cart-box{
+    width: 80%;
+  }
+  .cart-header{
+    width: 72%;
+  }
+  .emptyCard{
+    margin-top: 9%;
+  }
+}
+@media screen and (max-width: 790px) {
+  .cart-box{
+    width: 95%;
+  }
+  .cart-header{
+    width: 88%;
+  }
+}
+@media screen and (max-width: 490px) {
+  .emptyCard{
+    margin-top: 15%;
+  }
+}

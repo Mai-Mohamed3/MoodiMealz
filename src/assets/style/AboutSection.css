@@ -1,0 +1,113 @@
+.about-section {
+  display: flex;
+  justify-content: center;
+  background: #ffd86a;
+  padding: 60px 20px;
+  gap: 5%;
+  flex-wrap: wrap;
+}
+.about-image{
+    width: 35%;
+}
+.about-image img {
+  width: 100%;
+  border-radius: 20px;
+  border: 3px solid black;
+  object-fit: cover;
+}
+.about-content{
+  width: 40%;
+}
+.about-content .aboutHeader{
+  font-size: 5rem;
+  margin: 10% 0 4% 0;
+  width: 77%;
+  line-height: 1;
+}
+.about-content .highlight{
+    font-size: 4.5rem;
+}
+
+.about-content p {
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.about-btn {
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  position: relative;
+  border: 3px solid black;
+  background-color: #ffc2b0;
+  box-shadow: 3px 2px 2px 2px black;
+  border-radius: 100px;
+  transition: all .35s;
+  font-size: 18px;
+  margin-top: 4%;
+}
+
+.about-btn span {
+  margin-left: 5px;
+}
+
+.about-btn:hover {
+  box-shadow: 0 0 0 0 ;
+  transform: translateY(6px);
+}
+
+/* الشاشات الكبيرة */
+@media screen and (max-width: 1400px) {
+  .about-image {
+    width: 50%;
+  }
+  .about-content {
+    width: 45%;
+  }
+  .about-content .aboutHeader {
+    width: 90%;
+  }
+ .mission{
+  align-content: center;
+  margin-top: 4%;
+ }
+}
+@media screen and (max-width: 1200px) {
+  .about-content .aboutHeader {
+    width: 100%;
+  }
+}
+/* التابلت */
+@media screen and (max-width: 768px) {
+  .about-section{
+    flex-direction: column;
+    margin: auto;
+    width: 80%;
+  }
+  .about-image {
+    width: 96%;
+  }
+  .about-content {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .about-content .aboutHeader {
+    font-size: 4rem;
+    width: 100%;
+  }
+  .about-content .highlight {
+    font-size: 3.5rem;
+  }
+}
+/* للموبايل الصغير */
+@media screen and (max-width: 480px) {
+  .about-section{
+    width: 100%;
+  }
+
+}

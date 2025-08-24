@@ -1,0 +1,125 @@
+.container {
+  min-height: 100px;
+  padding: 20px;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  width: 85%;
+  justify-self: center;
+  align-items: start; /* ده مهم عشان الارتفاعات ماتساويش */
+}
+
+.content-container {
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+  border: 3px solid black;
+  box-shadow: 3px 2px 2px 2px black;
+  transition: all 0.35s ease;
+}
+
+.content-container:hover {
+  box-shadow: none;
+  transform: translateY(6px);
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f8d0b3;
+  width: 100%;
+  padding: 15px 20px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  font-family: Realce, Impact, sans-serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.2;
+  border: none;
+}
+
+.button.open {
+  border-radius: 5px 5px 0 0;
+}
+
+.content-container .icon {
+  font-weight: lighter;
+  align-self: center;
+  margin-top: 4px;
+  width: 6%;
+  aspect-ratio: 1 / 1;
+  background-color: black;
+  border-radius: 50%;
+  color: white;
+  font-family: Inter, Arial, sans-serif;
+}
+
+.content {
+  background-color: #faccb3;
+  overflow: hidden;
+  max-height: 0;
+  padding: 0 10px;
+  transition: max-height 0.4s ease, padding 0.3s ease;
+}
+
+.content.open {
+  padding: 10px;
+}
+
+/* Responsive Design */
+@media screen and (min-width: 1025px) {
+  .footer-icons {
+    justify-content: space-evenly;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .footer-icons {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .content-container .icon {
+    width: 11%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .footer-icons {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .content-container .icon {
+    width: 14%;
+  }
+    .button {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .grid {
+    grid-template-columns: 1fr;
+    width: 100%;
+    gap: 12px;
+  }
+  .title {
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+
+  .icon {
+    font-size: 1rem;
+  }
+    .content-container .icon {
+    width: 6%;
+  }
+}

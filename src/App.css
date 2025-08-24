@@ -1,0 +1,10 @@
+@font-face {
+  font-family: 'Mentimun';
+  src: url('./assets/Fonts/Mentimun.ttf') format('truetype');
+}
+html, body {
+  overflow-x: hidden;
+}
+* {
+  box-sizing: border-box;
+}
