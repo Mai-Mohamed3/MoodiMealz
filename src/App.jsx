@@ -25,7 +25,7 @@ function App() {
         <FriesMenu />
         
         <Routes>
-          <Route path="/" element={<HomePage />} />
+          <Route path="/MoodiMealz/" element={<HomePage />} />
           <Route path="/aboutus" element={<AboutUs />} />
           <Route path="/category/:categoryName" element={<Menu />} />
           <Route
