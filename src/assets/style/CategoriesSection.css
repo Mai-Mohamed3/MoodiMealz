@@ -94,8 +94,11 @@
 .role {
   font-size: 1rem;
   font-weight: 500;
+  color: #fff;
 }
-
+.team-card img{
+  max-height: 500px;
+}
 @media screen and (max-width: 790px) {
   .team-grid {
       grid-template-columns: repeat(auto-fill, minmax(331px, 1fr));

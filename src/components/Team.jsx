@@ -1,38 +1,38 @@
 import React, { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import "../assets/style/CategoriesSection.css";
-import breakfast from "../assets/Images/breakfast.png";
-import lunch from "../assets/Images/lunch.png";
-import dinner from "../assets/Images/dinner.png";
-import snacks from "../assets/Images/snacks.png";
+import breakfast from "../assets/Images/mai.jpg";
+import lunch from "../assets/Images/malak.png";
+import dinner from "../assets/Images/hesham.jpg";
+import snacks from "../assets/Images/abdin.jpg";
 
 const categories = [
   { name: "Mai Mohamed",
-    github:"",
-    linkedin:"",
-    Gmail:"",
+    github:"https://github.com/Mai-Mohamed3",
+    linkedin:"https://www.linkedin.com/in/mai-mohamed-developer/",
+    Gmail:"mai.mo.alii3@gmail.com",
     image: breakfast, 
     bg: "#ea40f0ff"
   },
-  { name: "Abdin", 
-    github:"",
-    linkedin:"",
-    Gmail:"",
-    image: lunch, 
+  { name: "Hesham", 
+    github:"https://github.com/hisham811",
+    linkedin:"https://www.linkedin.com/in/hisham-mostafa-murad",
+    Gmail:"hishammostafam@gmail.com",
+    image: dinner, 
     bg: "#1c6d0aff" 
   },
-  { name: "Hesham", 
+  { name: "Abdin", 
     github:"",
-    linkedin:"",
-    Gmail:"",
-    image: dinner, 
+    linkedin:"https://www.linkedin.com/in/abdin-ali-875869280?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+    Gmail:"abdinawad42@gmail.com",
+    image: snacks, 
     bg: "#633030ff" 
   },
   { name: "Malak", 
     github:"",
-    linkedin:"",
-    Gmail:"",
-    image: snacks, 
+    linkedin:"https://www.linkedin.com/in/malak-mohammad-a8b03b305?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    Gmail:"malak.effat11@gmail.com",
+    image: lunch, 
     bg: "#1d585cff" 
   },
 ];
@@ -47,11 +47,11 @@ export default function Team() {
       <div className="categories-grid team-grid">
         {categories.map((cat, index) => (
           <div
-            className="category-card menu-card "
+            className="category-card menu-card team-card"
             key={index}
             style={{ backgroundColor: cat.bg }}
           >
-            <span className="category-label">{cat.name}</span>
+            <span className="category-label ">{cat.name}</span>
             <img src={cat.image} alt={cat.name} />
 
             {/* الـ Overlay */}
