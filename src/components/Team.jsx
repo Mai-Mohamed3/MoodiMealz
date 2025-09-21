@@ -22,14 +22,14 @@ const categories = [
     bg: "#1c6d0aff" 
   },
   { name: "Abdin", 
-    github:"",
+    github:"https://github.com/AbdinAwad",
     linkedin:"https://www.linkedin.com/in/abdin-ali-875869280?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
     Gmail:"abdinawad42@gmail.com",
     image: snacks, 
     bg: "#633030ff" 
   },
   { name: "Malak", 
-    github:"",
+    github:"https://github.com/malak200606",
     linkedin:"https://www.linkedin.com/in/malak-mohammad-a8b03b305?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     Gmail:"malak.effat11@gmail.com",
     image: lunch, 
