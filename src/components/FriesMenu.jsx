@@ -13,7 +13,7 @@ export default function FriesMenu() {
 
   const handleSelectMood = (mood) => {
     setShowMenu(false);
-    navigate(`/mood/${mood}`);
+    navigate(`/MoodiMealz/mood/${mood}`);
   };
 
   return (

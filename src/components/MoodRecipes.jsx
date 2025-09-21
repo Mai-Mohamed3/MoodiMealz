@@ -1,6 +1,6 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import recipesData from "../Api/mockRecipes.json"; 
+import recipes from "../Api/mockRecipes";
 import "../assets/style/MoodRecipes.css";
 import { useCart } from "./CartContext";
 
@@ -8,10 +8,9 @@ export default function MoodRecipes() {
   const { mood } = useParams();
   const { addToCart } = useCart();
 
-  const filteredRecipes = recipesData.recipes.filter(recipe =>
-    recipe.tags.includes(mood)
-  );
-
+  const filteredRecipes = recipes.filter(recipe =>
+  recipe.tags.includes(mood)
+);
   const moodColors = {
     happy: ["#FFF59D", "#7E57C2", "#90A4AE", "#64B5F6", "#83770cff"], 
     sad: ["#90CAF9", "#2cc027ff", "#42A5F5", "#880f82ff", "#0b3a63ff"], 
