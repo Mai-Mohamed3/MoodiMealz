@@ -18,7 +18,7 @@ const Navbar = () => {
     <>
       <nav className="navbar">
         <div className="logo">
-          <a href="/MoodiMealz/">Moodi<span>Mealz</span></a>
+          <a href="/">Moodi<span>Mealz</span></a>
         </div>
         <div className="nav-right">
           <div className="cart-container">
@@ -42,7 +42,7 @@ const Navbar = () => {
       {/* قائمة المنيو */}
       <div className={`menu-overlay ${active ? "show" : ""}`}>
         <ul className="menu-links">
-          <li><Link to="/MoodiMealz/" onClick={() => setActive(false)}>HOME</Link></li>
+          <li><Link to="/" onClick={() => setActive(false)}>HOME</Link></li>
           <li className="list-dash"> | </li>
           <li><Link to="/menu" onClick={() => setActive(false)}>MENU</Link></li>
           <li className="list-dash"> | </li>
