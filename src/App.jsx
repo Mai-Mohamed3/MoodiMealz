@@ -29,7 +29,7 @@ function App() {
           <Route path="/aboutus" element={<AboutUs />} />
           <Route path="/category/:categoryName" element={<Menu />} />
           <Route
-            path="/MoodiMealz/mood/:mood"
+            path="/mood/:mood"
             element={
               <>
                 <MoodRecipes />
