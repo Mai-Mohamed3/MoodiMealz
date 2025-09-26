@@ -18,7 +18,7 @@ const Navbar = () => {
     <>
       <nav className="navbar">
         <div className="logo">
-          <a href="/">Moodi<span>Mealz</span></a>
+          <a href="/MoodiMealz/">Moodi<span>Mealz</span></a>
         </div>
         <div className="nav-right">
           <div className="cart-container">
