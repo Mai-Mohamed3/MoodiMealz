@@ -2,11 +2,14 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>Page Not Found</title>
+    <title>Redirecting...</title>
     <script type="text/javascript">
-      var redirectTo = window.location.pathname.replace('/MoodiMealz', '');
+      // خزن الـ path الأصلي كامل (المسار + query + hash)
+      var redirectTo = window.location.pathname + window.location.search + window.location.hash;
       sessionStorage.redirect = redirectTo;
-      window.location.href = '/MoodiMealz/';
+
+      // رجّع المستخدم للـ index.html (بتاع MoodiMealz)
+      window.location.href = "/MoodiMealz/";
     </script>
   </head>
   <body>
