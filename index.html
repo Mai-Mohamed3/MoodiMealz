@@ -16,12 +16,13 @@
     <script type="text/javascript">
       (function () {
         var redirect = sessionStorage.redirect;
-        delete sessionStorage.redirect;
-        if (redirect && redirect !== location.pathname) {
-          history.replaceState(null, null, redirect);
+        if (redirect) {
+          delete sessionStorage.redirect;
+          window.history.replaceState(null, null, redirect);
         }
       })();
     </script>
+
 
   </body>
 </html>
