@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop";
 import Navbar from "./components/Navbar";
 import FriesMenu from "./components/FriesMenu";
@@ -18,7 +18,7 @@ import './App.css'
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <CartProvider>
         <ScrollToTop/>
         <Navbar/>
@@ -65,7 +65,7 @@ function App() {
         <BackToTopButton/>
         <Footer/>
       </CartProvider>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
